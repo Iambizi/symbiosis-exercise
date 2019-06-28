@@ -1,0 +1,122 @@
+.testing {
+  width: 71.42857%; }
+
+* {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  list-style-type: none; }
+
+#sidebar {
+  position: fixed;
+  background-color: #000b18;
+  width: 225px;
+  height: 100vh;
+  color: #a9a9a9; }
+  #sidebar #logo {
+    margin: 15px 35px; }
+  #sidebar ul {
+    margin-top: 10px;
+    padding-left: 15px;
+    list-style-type: none; }
+    #sidebar ul li {
+      font-weight: 500;
+      font-size: 14px;
+      margin-bottom: 20px; }
+      #sidebar ul li svg {
+        position: relative;
+        top: 25%;
+        margin-right: 10px;
+        height: 20px; }
+      #sidebar ul li.active {
+        color: #fff; }
+      #sidebar ul li a {
+        text-decoration: none;
+        color: inherit; }
+  #sidebar #logout {
+    position: relative;
+    top: 63%;
+    padding-left: 15px;
+    font-size: 14px; }
+    #sidebar #logout svg {
+      position: relative;
+      top: 1%;
+      margin-right: 10px; }
+    #sidebar #logout a {
+      text-decoration: none;
+      color: inherit; }
+
+#header {
+  float: right;
+  width: calc(100% - 225px);
+  height: 80px;
+  background-color: #dcdcdc; }
+  #header #menu {
+    margin: 26px 15px 15px 15px; }
+  #header :hover {
+    cursor: pointer; }
+  #header .header-icons {
+    float: right; }
+    #header .header-icons svg {
+      margin: 25px 15px 15px 10px; }
+
+#convos {
+  list-style-type: none;
+  width: 360px;
+  height: 100%;
+  float: right;
+  border-left: 2.5px solid #dcdcdc; }
+  #convos .tabs ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px; }
+    #convos .tabs ul li {
+      font-size: 15px;
+      width: 50%;
+      height: 80px;
+      border-bottom: 2.5px solid #dcdcdc;
+      color: #a9a9a9;
+      text-align: center; }
+      #convos .tabs ul li p {
+        padding: 1.9rem 0 0px 0; }
+      #convos .tabs ul li.active {
+        color: #000;
+        font-weight: 500;
+        border-bottom: 2.5px solid #27a678; }
+      #convos .tabs ul li:hover {
+        cursor: pointer; }
+  #convos .conversation {
+    height: 75px;
+    width: 80px;
+    padding: 20px 20px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #convos .conversation .user-img {
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+      background-color: #dcdcdc;
+      margin: 0 40px 0 40px; }
+      #convos .conversation .user-img svg {
+        padding: 15px 18px; }
+    #convos .conversation .user-details {
+      height: 100%; }
+      #convos .conversation .user-details .user-name {
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        font-size: 13px;
+        white-space: nowrap; }
+      #convos .conversation .user-details .last-convo-date {
+        font-size: 12px;
+        color: #a9a9a9;
+        white-space: nowrap; }
+
+@media screen and (max-width: 1280px) {
+  #sidebar #logout {
+    top: 50%; }
+  #sidebar svg {
+    height: 20px; }
+  #sidebar:hover {
+    cursor: pointer; } }

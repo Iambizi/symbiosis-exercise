@@ -1,0 +1,166 @@
+.testing {
+  width: percentage(5/7);
+}
+* {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  list-style-type: none;
+}
+//Color Variables
+$sidebar: #000b18;
+$dark-grey: #a9a9a9;
+$active-white: #fff;
+$header-grey: #dcdcdc;
+$green: #27a678;
+$black: #000;
+
+#sidebar {
+  position: fixed;
+  #logo {
+    margin: 15px 35px;
+  }
+  background-color: $sidebar;
+  width: 225px;
+  height: 100vh;
+  color: $dark-grey;
+  ul {
+    margin-top: 10px;
+    padding-left: 15px;
+    list-style-type: none;
+    li {
+      font-weight: 500;
+      font-size: 14px;
+      margin-bottom: 20px;
+      svg {
+        position: relative;
+        top: 25%;
+        margin-right: 10px;
+        height: 20px;
+      }
+      &.active {
+        color: $active-white;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+  #logout {
+    position: relative;
+    top: 63%;
+    padding-left: 15px;
+    font-size: 14px;
+    svg {
+      position: relative;
+      top: 1%;
+      margin-right: 10px;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
+#header {
+  float: right;
+  width: calc(100% - 225px);
+  height: 80px;
+  background-color: $header-grey;
+  #menu {
+    margin: 26px 15px 15px 15px;
+  }
+  :hover {
+    cursor: pointer;
+  }
+  .header-icons {
+    float: right;
+    svg {
+      margin: 25px 15px 15px 10px;
+    }
+  }
+}
+#convos {
+  list-style-type: none;
+  width: 360px;
+  height: 100%;
+  float: right;
+  border-left: 2.5px solid $header-grey;
+  .tabs {
+    ul {
+      display: flex;
+      justify-content: space-around;
+      padding: 0px;
+      li {
+        font-size: 15px;
+        width: 50%;
+        height: 80px;
+        border-bottom: 2.5px solid $header-grey;
+        color: $dark-grey;
+        text-align: center;
+        p {
+          padding: 1.9rem 0 0px 0;
+        }
+        &.active {
+          color: $black;
+          font-weight: 500;
+          border-bottom: 2.5px solid $green;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .conversation {
+    height: 75px;
+    width: 80px;
+    padding: 20px 20px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .user-img {
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+      background-color: $header-grey;
+      margin: 0 40px 0 40px;
+
+      svg {
+        padding: 15px 18px;
+      }
+    }
+    .user-details {
+      height: 100%;
+      .user-name {
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        font-size: 13px;
+        white-space: nowrap;
+      }
+      .last-convo-date {
+        font-size: 12px;
+        color: $dark-grey;
+        white-space: nowrap;
+      }
+      svg {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #sidebar {
+    #logout {
+      top: 50%;
+    }
+    svg {
+      height: 20px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

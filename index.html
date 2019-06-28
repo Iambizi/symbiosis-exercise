@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="path/to/style/eva-icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/eva-icons"></script>
+    <script src="gulpfile.js"></script>
+  </head>
+  <body>
+    <div id="sidebar">
+      <img id="logo" src="./css/images/logo.png" alt="" />
+      <nav>
+        <ul>
+          <li>
+            <i data-eva="layout-outline" data-eva-fill="#A9A9A9"></i
+            ><a href="#/">Dashboard</a>
+          </li>
+          <li>
+            <i data-eva="trending-up-outline" data-eva-fill="#A9A9A9"></i
+            ><a href="#/">Statistics</a>
+          </li>
+          <li>
+            <i data-eva="folder-outline" data-eva-fill="#A9A9A9"></i
+            ><a href="#/">Documents</a>
+          </li>
+          <li>
+            <i data-eva="image-outline" data-eva-fill="#A9A9A9"></i
+            ><a href="#/">Medias</a>
+          </li>
+          <li class="active">
+            <i data-eva="calendar-outline" data-eva-fill="#DDCB37"></i
+            ><a href="#/">Events</a>
+          </li>
+        </ul>
+      </nav>
+      <span id="logout"
+        ><i data-eva="power-outline" data-eva-fill="#A9A9A9"></i
+        ><a href="#/">Logout</a></span
+      >
+    </div>
+    <div id="header">
+      <i id="menu" data-eva="menu-arrow-outline" data-eva-fill="#A9A9A9"></i>
+      <div class="header-icons">
+        <i data-eva="message-square-outline" data-eva-fill="#27A678"></i>
+        <i data-eva="bell-outline" data-eva-fill="#A9A9A9"></i>
+        <i data-eva="person-outline" data-eva-fill="#A9A9A9"></i>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="filter"></div>
+      <div class="article-list"></div>
+    </div>
+    <div id="convos">
+      <div class="tabs">
+        <ul>
+          <li class="active"><p>Recent</p></li>
+          <li><p>Archived</p></li>
+        </ul>
+      </div>
+      <div class="conversation">
+        <div class="user-img">
+          <i data-eva="person-outline" data-eva-fill="#A9A9A9"></i>
+        </div>
+        <div class="user-details">
+          <span class="user-name">Philip Saunders</span>
+          <span class="last-convo-date">25 juin 2019 03:16 PM</span>
+          <i data-eva="chevron-right-outline" data-eva-fill="#A9A9A9"></i>
+        </div>
+      </div>
+    </div>
+    <script>
+      eva.replace();
+    </script>
+  </body>
+</html>
