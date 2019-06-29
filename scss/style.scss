@@ -313,6 +313,47 @@ body {
 }
 
 //Responsive center
+@media screen and (max-width: 1400px) {
+  body {
+    #sidebar {
+      // #logout {
+      //   top: 44%;
+      // }
+      svg {
+        height: 20px;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    #main-content {
+      #filter {
+        #add-filter {
+          left: 50%;
+        }
+      }
+      #article-list {
+        #right-column,
+        #left-column {
+          width: 0;
+          .article {
+            margin-bottom: 20px;
+            width: 320px;
+            .article-title {
+              font-size: 17px;
+            }
+            .edit {
+              bottom: 78px;
+            }
+            .delete {
+              bottom: 68px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 1300px) {
   body {
@@ -339,7 +380,7 @@ body {
           width: 0;
           .article {
             margin-bottom: 20px;
-            width: 250px;
+            width: 270px;
             .article-title {
               font-size: 17px;
             }
@@ -381,7 +422,7 @@ body {
           width: 0;
           .article {
             margin-bottom: 20px;
-            width: 250px;
+            width: 260px;
             .article-title {
               font-size: 17px;
               #right-column,

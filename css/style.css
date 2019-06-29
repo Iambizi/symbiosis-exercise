@@ -254,6 +254,30 @@ body {
       body #convo-section #add-convo:hover {
         cursor: pointer; }
 
+@media screen and (max-width: 1400px) {
+  body #sidebar svg {
+    height: 20px; }
+  body #sidebar:hover {
+    cursor: pointer; }
+  body #main-content #filter #add-filter {
+    left: 50%; }
+  body #main-content #article-list #right-column,
+  body #main-content #article-list #left-column {
+    width: 0; }
+    body #main-content #article-list #right-column .article,
+    body #main-content #article-list #left-column .article {
+      margin-bottom: 20px;
+      width: 320px; }
+      body #main-content #article-list #right-column .article .article-title,
+      body #main-content #article-list #left-column .article .article-title {
+        font-size: 17px; }
+      body #main-content #article-list #right-column .article .edit,
+      body #main-content #article-list #left-column .article .edit {
+        bottom: 78px; }
+      body #main-content #article-list #right-column .article .delete,
+      body #main-content #article-list #left-column .article .delete {
+        bottom: 68px; } }
+
 @media screen and (max-width: 1300px) {
   body #sidebar svg {
     height: 20px; }
@@ -267,7 +291,7 @@ body {
     body #main-content #article-list #right-column .article,
     body #main-content #article-list #left-column .article {
       margin-bottom: 20px;
-      width: 250px; }
+      width: 270px; }
       body #main-content #article-list #right-column .article .article-title,
       body #main-content #article-list #left-column .article .article-title {
         font-size: 17px; }
@@ -291,7 +315,7 @@ body {
     body #main-content #article-list #right-column .article,
     body #main-content #article-list #left-column .article {
       margin-bottom: 20px;
-      width: 250px; }
+      width: 260px; }
       body #main-content #article-list #right-column .article .article-title,
       body #main-content #article-list #left-column .article .article-title {
         font-size: 17px; }
