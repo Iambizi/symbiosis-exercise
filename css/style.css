@@ -8,8 +8,8 @@
 
 body {
   display: grid;
-  overflow-x: hidden;
-  grid-template-columns: 225px auto 360px; }
+  grid-template-columns: 225px auto 360px;
+  overflow-x: hidden; }
   body #sidebar {
     position: fixed;
     grid-column: 1 /-4;
@@ -40,12 +40,12 @@ body {
           color: inherit; }
     body #sidebar #logout {
       position: relative;
-      top: 53%;
+      top: 45%;
       padding-left: 15px;
       font-size: 14px; }
       body #sidebar #logout svg {
         position: relative;
-        top: 1%;
+        top: 5px;
         margin-right: 10px; }
       body #sidebar #logout a {
         text-decoration: none;
@@ -178,7 +178,7 @@ body {
     grid-row: 2;
     grid-column: 3;
     width: 360px;
-    height: 100%;
+    height: 1100px;
     list-style-type: none;
     border-left: 2.8px solid #dcdcdc; }
     body #convo-section .tabs ul {
@@ -254,9 +254,7 @@ body {
       body #convo-section #add-convo:hover {
         cursor: pointer; }
 
-@media screen and (max-width: 1280px) {
-  body #sidebar #logout {
-    top: 36%; }
+@media screen and (max-width: 1300px) {
   body #sidebar svg {
     height: 20px; }
   body #sidebar:hover {
@@ -272,4 +270,105 @@ body {
       width: 250px; }
       body #main-content #article-list #right-column .article .article-title,
       body #main-content #article-list #left-column .article .article-title {
-        font-size: 17px; } }
+        font-size: 17px; }
+      body #main-content #article-list #right-column .article .edit,
+      body #main-content #article-list #left-column .article .edit {
+        bottom: 78px; }
+      body #main-content #article-list #right-column .article .delete,
+      body #main-content #article-list #left-column .article .delete {
+        bottom: 68px; } }
+
+@media screen and (max-width: 1280px) {
+  body #sidebar svg {
+    height: 20px; }
+  body #sidebar:hover {
+    cursor: pointer; }
+  body #main-content #filter #add-filter {
+    left: 42%; }
+  body #main-content #article-list #right-column,
+  body #main-content #article-list #left-column {
+    width: 0; }
+    body #main-content #article-list #right-column .article,
+    body #main-content #article-list #left-column .article {
+      margin-bottom: 20px;
+      width: 250px; }
+      body #main-content #article-list #right-column .article .article-title,
+      body #main-content #article-list #left-column .article .article-title {
+        font-size: 17px; }
+        body #main-content #article-list #right-column .article .article-title #right-column,
+        body #main-content #article-list #right-column .article .article-title #left-column,
+        body #main-content #article-list #left-column .article .article-title #right-column,
+        body #main-content #article-list #left-column .article .article-title #left-column {
+          width: 0; }
+          body #main-content #article-list #right-column .article .article-title #right-column .article,
+          body #main-content #article-list #right-column .article .article-title #left-column .article,
+          body #main-content #article-list #left-column .article .article-title #right-column .article,
+          body #main-content #article-list #left-column .article .article-title #left-column .article {
+            margin-bottom: 20px;
+            width: 250px; }
+            body #main-content #article-list #right-column .article .article-title #right-column .article .article-title,
+            body #main-content #article-list #right-column .article .article-title #left-column .article .article-title,
+            body #main-content #article-list #left-column .article .article-title #right-column .article .article-title,
+            body #main-content #article-list #left-column .article .article-title #left-column .article .article-title {
+              font-size: 17px; }
+            body #main-content #article-list #right-column .article .article-title #right-column .article .edit,
+            body #main-content #article-list #right-column .article .article-title #left-column .article .edit,
+            body #main-content #article-list #left-column .article .article-title #right-column .article .edit,
+            body #main-content #article-list #left-column .article .article-title #left-column .article .edit {
+              bottom: 78px; }
+            body #main-content #article-list #right-column .article .article-title #right-column .article .delete,
+            body #main-content #article-list #right-column .article .article-title #left-column .article .delete,
+            body #main-content #article-list #left-column .article .article-title #right-column .article .delete,
+            body #main-content #article-list #left-column .article .article-title #left-column .article .delete {
+              bottom: 68px; } }
+
+@media screen and (max-width: 1080px) {
+  body #sidebar svg {
+    height: 20px; }
+  body #sidebar:hover {
+    cursor: pointer; }
+  body #main-content #filter #add-filter {
+    left: 20%; }
+  body #main-content #article-list #right-column,
+  body #main-content #article-list #left-column {
+    width: 0; }
+    body #main-content #article-list #right-column .article,
+    body #main-content #article-list #left-column .article {
+      margin-bottom: 20px;
+      width: 170px;
+      height: 68px; }
+      body #main-content #article-list #right-column .article .article-title,
+      body #main-content #article-list #left-column .article .article-title {
+        font-size: 0.8rem; }
+  body #convo-section {
+    width: 320px; }
+    body #convo-section #add-convo {
+      width: 280px; } }
+
+@media screen and (max-width: 980px) {
+  body #sidebar svg {
+    height: 20px; }
+  body #sidebar:hover {
+    cursor: pointer; }
+  body #main-content #filter input {
+    width: 140px;
+    margin-left: 5px; }
+  body #main-content #filter #add-filter {
+    left: 18%; }
+  body #main-content #article-list #right-column,
+  body #main-content #article-list #left-column {
+    width: 0; }
+    body #main-content #article-list #right-column .article,
+    body #main-content #article-list #left-column .article {
+      margin-bottom: 20px;
+      width: 120px;
+      height: 68px; }
+      body #main-content #article-list #right-column .article .article-title,
+      body #main-content #article-list #left-column .article .article-title {
+        font-size: 0.7rem; }
+  body #convo-section {
+    width: 320px; }
+    body #convo-section .individ-convos .conversation {
+      width: 70px; }
+    body #convo-section #add-convo {
+      width: 280px; } }
