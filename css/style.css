@@ -254,7 +254,7 @@ body {
       body #convo-section #add-convo:hover {
         cursor: pointer; }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
   body #sidebar svg {
     height: 20px; }
   body #sidebar:hover {
