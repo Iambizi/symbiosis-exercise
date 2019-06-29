@@ -6,117 +6,251 @@
   font-family: "Montserrat", sans-serif;
   list-style-type: none; }
 
-#sidebar {
-  position: fixed;
-  background-color: #000b18;
-  width: 225px;
-  height: 100vh;
-  color: #a9a9a9; }
-  #sidebar #logo {
-    margin: 15px 35px; }
-  #sidebar ul {
-    margin-top: 10px;
-    padding-left: 15px;
-    list-style-type: none; }
-    #sidebar ul li {
-      font-weight: 500;
-      font-size: 14px;
-      margin-bottom: 20px; }
-      #sidebar ul li svg {
+body {
+  display: grid;
+  overflow-x: hidden;
+  grid-template-columns: 225px auto 360px; }
+  body #sidebar {
+    position: fixed;
+    background-color: #000b18;
+    width: 225px;
+    height: 100vh;
+    color: #a9a9a9; }
+    body #sidebar #logo {
+      margin: 15px 35px; }
+    body #sidebar ul {
+      margin-top: 10px;
+      padding-left: 15px;
+      list-style-type: none; }
+      body #sidebar ul li {
+        vertical-align: middle;
+        font-weight: 500;
+        font-size: 0.875rem;
+        margin-bottom: 20px; }
+        body #sidebar ul li svg {
+          position: relative;
+          top: 25%;
+          margin-right: 10px;
+          height: 20px; }
+        body #sidebar ul li.active {
+          color: #fff; }
+        body #sidebar ul li a {
+          text-decoration: none;
+          color: inherit; }
+    body #sidebar #logout {
+      position: relative;
+      top: 63%;
+      padding-left: 15px;
+      font-size: 14px; }
+      body #sidebar #logout svg {
         position: relative;
-        top: 25%;
-        margin-right: 10px;
-        height: 20px; }
-      #sidebar ul li.active {
-        color: #fff; }
-      #sidebar ul li a {
+        top: 1%;
+        margin-right: 10px; }
+      body #sidebar #logout a {
         text-decoration: none;
         color: inherit; }
-  #sidebar #logout {
-    position: relative;
-    top: 63%;
-    padding-left: 15px;
-    font-size: 14px; }
-    #sidebar #logout svg {
-      position: relative;
-      top: 1%;
-      margin-right: 10px; }
-    #sidebar #logout a {
-      text-decoration: none;
-      color: inherit; }
-
-#header {
-  float: right;
-  width: calc(100% - 225px);
-  height: 80px;
-  background-color: #dcdcdc; }
-  #header #menu {
-    margin: 26px 15px 15px 15px; }
-  #header :hover {
-    cursor: pointer; }
-  #header .header-icons {
-    float: right; }
-    #header .header-icons svg {
-      margin: 25px 15px 15px 10px; }
-
-#convos {
-  list-style-type: none;
-  width: 360px;
-  height: 100%;
-  float: right;
-  border-left: 2.5px solid #dcdcdc; }
-  #convos .tabs ul {
+  body #header {
     display: flex;
-    justify-content: space-around;
-    padding: 0px; }
-    #convos .tabs ul li {
-      font-size: 15px;
-      width: 50%;
-      height: 80px;
-      border-bottom: 2.5px solid #dcdcdc;
-      color: #a9a9a9;
-      text-align: center; }
-      #convos .tabs ul li p {
-        padding: 1.9rem 0 0px 0; }
-      #convos .tabs ul li.active {
-        color: #000;
-        font-weight: 500;
-        border-bottom: 2.5px solid #27a678; }
-      #convos .tabs ul li:hover {
-        cursor: pointer; }
-  #convos .conversation {
-    height: 75px;
-    width: 80px;
-    padding: 20px 20px;
-    display: inline-block;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    #convos .conversation .user-img {
+    justify-content: space-between;
+    grid-column: 2 / 4;
+    grid-row: 1;
+    width: 100%;
+    height: 80px;
+    background-color: #dcdcdc; }
+    body #header #menu {
+      margin: 26px 15px 15px 15px; }
+    body #header :hover {
+      cursor: pointer; }
+    body #header .header-icons .active-circle {
       border-radius: 50%;
-      height: 60px;
-      width: 60px;
-      background-color: #dcdcdc;
-      margin: 0 40px 0 40px; }
-      #convos .conversation .user-img svg {
-        padding: 15px 18px; }
-    #convos .conversation .user-details {
-      height: 100%; }
-      #convos .conversation .user-details .user-name {
-        display: flex;
-        flex-direction: column;
-        font-weight: bold;
-        font-size: 13px;
-        white-space: nowrap; }
-      #convos .conversation .user-details .last-convo-date {
-        font-size: 12px;
+      background-color: white; }
+    body #header .header-icons svg {
+      margin: 25px 36px 15px 5px; }
+  body #main-content {
+    grid-row: 2;
+    grid-column: 2; }
+    body #main-content #filter {
+      display: inline-flex;
+      flex-direction: row;
+      vertical-align: middle;
+      width: 100%;
+      height: 80px;
+      border-bottom: 2.8px solid #dcdcdc;
+      flex-direction: row; }
+      body #main-content #filter svg#funnel {
+        margin: 23px 10px 0 20px;
+        height: 29px; }
+      body #main-content #filter p {
+        font-weight: 500;
+        margin-top: 30px; }
+      body #main-content #filter input {
+        margin-top: 18px;
+        margin-left: 25px;
+        height: 40px;
+        width: 190px;
+        font-size: 14px;
+        font-weight: 500; }
+      body #main-content #filter #add-filter {
+        position: relative;
+        left: 63%;
+        background-color: #27a678;
+        margin: 13px 20px 0 0;
+        border-radius: 2px;
+        height: 55px;
+        width: 55px;
+        border: none; }
+        body #main-content #filter #add-filter:hover {
+          cursor: pointer; }
+        body #main-content #filter #add-filter svg {
+          height: 30px; }
+    body #main-content #article-list {
+      margin: 30px 20px 0 35px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 0px; }
+      body #main-content #article-list #left-column .article,
+      body #main-content #article-list #right-column .article {
+        padding: 20px 20px;
+        border: 2px solid #dcdcdc;
+        height: 70px;
+        width: 380px;
+        margin-bottom: 8px; }
+        body #main-content #article-list #left-column .article .article-date,
+        body #main-content #article-list #right-column .article .article-date {
+          color: #a9a9a9;
+          font-size: 13px;
+          font-weight: 500; }
+        body #main-content #article-list #left-column .article .article-title,
+        body #main-content #article-list #right-column .article .article-title {
+          color: #000;
+          text-transform: capitalize;
+          font-size: 1.3rem;
+          font-weight: 500;
+          margin-top: 1px;
+          margin-bottom: 0px; }
+        body #main-content #article-list #left-column .article .author,
+        body #main-content #article-list #right-column .article .author {
+          color: #ddcb37;
+          font-size: 12px;
+          font-weight: 500; }
+        body #main-content #article-list #left-column .article .edit,
+        body #main-content #article-list #right-column .article .edit {
+          position: relative;
+          left: 101%;
+          bottom: 88px;
+          border: 2px solid #dcdcdc;
+          background-color: #fff;
+          border-radius: 50%;
+          height: 30px;
+          width: 30px;
+          border-radius: 50%; }
+          body #main-content #article-list #left-column .article .edit svg,
+          body #main-content #article-list #right-column .article .edit svg {
+            padding: 4px 0 0 4px;
+            height: 17px; }
+        body #main-content #article-list #left-column .article .delete,
+        body #main-content #article-list #right-column .article .delete {
+          position: relative;
+          left: 101%;
+          bottom: 78px;
+          border: 2px solid #dcdcdc;
+          background-color: #fff;
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+          z-index: 1000; }
+          body #main-content #article-list #left-column .article .delete svg,
+          body #main-content #article-list #right-column .article .delete svg {
+            padding: 6px 0 0 4px;
+            height: 16px; }
+  body #convo-section {
+    grid-row: 2;
+    grid-column: 3;
+    width: 360px;
+    height: 100vh;
+    list-style-type: none;
+    border-left: 2.8px solid #dcdcdc; }
+    body #convo-section .tabs ul {
+      display: flex;
+      justify-content: space-around;
+      padding: 0px; }
+      body #convo-section .tabs ul li {
+        font-size: 0.9375rem;
+        width: 50%;
+        height: 80px;
+        border-bottom: 2.8px solid #dcdcdc;
         color: #a9a9a9;
-        white-space: nowrap; }
+        text-align: center; }
+        body #convo-section .tabs ul li p {
+          padding: 30px 0 0px 0; }
+        body #convo-section .tabs ul li.active {
+          color: #000;
+          font-weight: 500;
+          border-bottom: 2.8px solid #27a678; }
+        body #convo-section .tabs ul li:hover {
+          cursor: pointer; }
+    body #convo-section .individ-convos {
+      padding: 20px 0 0 25px; }
+      body #convo-section .individ-convos .conversation {
+        height: 68px;
+        width: 80px;
+        display: flex; }
+        body #convo-section .individ-convos .conversation .user-img {
+          border-radius: 50%;
+          height: 50px;
+          width: 50px;
+          background-color: #dcdcdc;
+          margin: 0 15px 0 3px; }
+          body #convo-section .individ-convos .conversation .user-img svg {
+            padding: 12px 13px; }
+        body #convo-section .individ-convos .conversation .user-details {
+          height: 40px;
+          margin-top: 3px; }
+          body #convo-section .individ-convos .conversation .user-details .user-name {
+            font-weight: bold;
+            font-size: 0.8125rem;
+            white-space: nowrap; }
+          body #convo-section .individ-convos .conversation .user-details .last-convo-date {
+            font-size: 0.67rem;
+            color: #a9a9a9;
+            white-space: nowrap; }
+        body #convo-section .individ-convos .conversation:hover {
+          cursor: pointer; }
+    body #convo-section #add-convo {
+      border: none;
+      border-radius: 2px;
+      background-color: #27a678;
+      color: #fff;
+      height: 55px;
+      width: 300px;
+      margin: 10px 0px 0px 25px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 1.5px; }
+      body #convo-section #add-convo span {
+        vertical-align: middle;
+        text-align: center;
+        padding-bottom: 20px; }
+        body #convo-section #add-convo span svg {
+          position: relative;
+          top: 10%;
+          right: 3.5%; }
+      body #convo-section #add-convo:hover {
+        cursor: pointer; }
 
 @media screen and (max-width: 1280px) {
-  #sidebar #logout {
+  body #sidebar #logout {
     top: 50%; }
-  #sidebar svg {
+  body #sidebar svg {
     height: 20px; }
-  #sidebar:hover {
-    cursor: pointer; } }
+  body #sidebar:hover {
+    cursor: pointer; }
+  body #main-content #filter #add-filter {
+    left: 42%; }
+  body #main-content #article-list #right-column .article,
+  body #main-content #article-list #left-column .article {
+    margin-bottom: 20px;
+    width: 250px; }
+    body #main-content #article-list #right-column .article .article-title,
+    body #main-content #article-list #left-column .article .article-title {
+      font-size: 17px; } }

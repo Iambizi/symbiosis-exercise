@@ -13,32 +13,53 @@ $active-white: #fff;
 $header-grey: #dcdcdc;
 $green: #27a678;
 $black: #000;
-
-#sidebar {
-  position: fixed;
-  #logo {
-    margin: 15px 35px;
-  }
-  background-color: $sidebar;
-  width: 225px;
-  height: 100vh;
-  color: $dark-grey;
-  ul {
-    margin-top: 10px;
-    padding-left: 15px;
-    list-style-type: none;
-    li {
-      font-weight: 500;
+$yellow: #ddcb37;
+body {
+  display: grid;
+  overflow-x: hidden;
+  grid-template-columns: 225px auto 360px;
+  #sidebar {
+    position: fixed;
+    #logo {
+      margin: 15px 35px;
+    }
+    background-color: $sidebar;
+    width: 225px;
+    height: 100vh;
+    color: $dark-grey;
+    ul {
+      margin-top: 10px;
+      padding-left: 15px;
+      list-style-type: none;
+      li {
+        vertical-align: middle;
+        font-weight: 500;
+        font-size: 0.875rem;
+        margin-bottom: 20px;
+        svg {
+          position: relative;
+          top: 25%;
+          margin-right: 10px;
+          height: 20px;
+        }
+        &.active {
+          color: $active-white;
+        }
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+    }
+    #logout {
+      position: relative;
+      top: 63%;
+      padding-left: 15px;
       font-size: 14px;
-      margin-bottom: 20px;
       svg {
         position: relative;
-        top: 25%;
+        top: 1%;
         margin-right: 10px;
-        height: 20px;
-      }
-      &.active {
-        color: $active-white;
       }
       a {
         text-decoration: none;
@@ -46,121 +67,271 @@ $black: #000;
       }
     }
   }
-  #logout {
-    position: relative;
-    top: 63%;
-    padding-left: 15px;
-    font-size: 14px;
-    svg {
-      position: relative;
-      top: 1%;
-      margin-right: 10px;
+  #header {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 2 / 4;
+    grid-row: 1;
+    width: 100%;
+    height: 80px;
+    background-color: $header-grey;
+    #menu {
+      margin: 26px 15px 15px 15px;
     }
-    a {
-      text-decoration: none;
-      color: inherit;
+    :hover {
+      cursor: pointer;
     }
-  }
-}
-#header {
-  float: right;
-  width: calc(100% - 225px);
-  height: 80px;
-  background-color: $header-grey;
-  #menu {
-    margin: 26px 15px 15px 15px;
-  }
-  :hover {
-    cursor: pointer;
-  }
-  .header-icons {
-    float: right;
-    svg {
-      margin: 25px 15px 15px 10px;
+    .header-icons {
+      .active-circle {
+        border-radius: 50%;
+        background-color: white;
+      }
+      svg {
+        margin: 25px 36px 15px 5px;
+      }
     }
   }
-}
-#convos {
-  list-style-type: none;
-  width: 360px;
-  height: 100%;
-  float: right;
-  border-left: 2.5px solid $header-grey;
-  .tabs {
-    ul {
-      display: flex;
-      justify-content: space-around;
-      padding: 0px;
-      li {
-        font-size: 15px;
-        width: 50%;
-        height: 80px;
-        border-bottom: 2.5px solid $header-grey;
-        color: $dark-grey;
-        text-align: center;
-        p {
-          padding: 1.9rem 0 0px 0;
+  #main-content {
+    grid-row: 2;
+    grid-column: 2;
+    #filter {
+      display: inline-flex;
+      flex-direction: row;
+      // justify-content: space-between;
+      vertical-align: middle;
+      width: 100%;
+      height: 80px;
+      border-bottom: 2.8px solid $header-grey;
+      flex-direction: row;
+      svg#funnel {
+        margin: 23px 10px 0 20px;
+        height: 29px;
+      }
+      p {
+        font-weight: 500;
+        margin-top: 30px;
+      }
+      input {
+        margin-top: 18px;
+        margin-left: 25px;
+        height: 40px;
+        width: 190px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      #add-filter {
+        position: relative;
+        left: 63%;
+        background-color: $green;
+        margin: 13px 20px 0 0;
+        border-radius: 2px;
+        height: 55px;
+        width: 55px;
+        border: none;
+        &:hover {
+          cursor: pointer;
         }
-        &.active {
-          color: $black;
-          font-weight: 500;
-          border-bottom: 2.5px solid $green;
+        svg {
+          height: 30px;
+        }
+      }
+    }
+    #article-list {
+      margin: 30px 20px 0 35px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 0px;
+      #left-column,
+      #right-column {
+        .article {
+          padding: 20px 20px;
+          border: 2px solid $header-grey;
+          height: 70px;
+          width: 380px;
+          margin-bottom: 8px;
+          .article-date {
+            color: $dark-grey;
+            font-size: 13px;
+            font-weight: 500;
+          }
+          .article-title {
+            color: $black;
+            text-transform: capitalize;
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-top: 1px;
+            margin-bottom: 0px;
+          }
+          .author {
+            color: $yellow;
+            font-size: 12px;
+            font-weight: 500;
+          }
+          .edit {
+            position: relative;
+            left: 101%;
+            bottom: 88px;
+            border: 2px solid $header-grey;
+            background-color: #fff;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            svg {
+              padding: 4px 0 0 4px;
+              height: 17px;
+            }
+          }
+          .delete {
+            position: relative;
+            left: 101%;
+            bottom: 78px;
+            border: 2px solid $header-grey;
+            background-color: #fff;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            z-index: 1000;
+            svg {
+              padding: 6px 0 0 4px;
+              height: 16px;
+            }
+          }
+        }
+      }
+      .right-column {
+      }
+    }
+  }
+  #convo-section {
+    grid-row: 2;
+    grid-column: 3;
+    width: 360px;
+    height: 100vh;
+    list-style-type: none;
+    border-left: 2.8px solid $header-grey;
+    .tabs {
+      ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0px;
+        li {
+          font-size: 0.9375rem;
+          width: 50%;
+          height: 80px;
+          border-bottom: 2.8px solid $header-grey;
+          color: $dark-grey;
+          text-align: center;
+          p {
+            padding: 30px 0 0px 0;
+          }
+          &.active {
+            color: $black;
+            font-weight: 500;
+            border-bottom: 2.8px solid $green;
+          }
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .individ-convos {
+      padding: 20px 0 0 25px;
+      .conversation {
+        height: 68px;
+        width: 80px;
+        display: flex;
+        .user-img {
+          border-radius: 50%;
+          height: 50px;
+          width: 50px;
+          background-color: $header-grey;
+          margin: 0 15px 0 3px;
+          svg {
+            padding: 12px 13px;
+          }
+        }
+        .user-details {
+          height: 40px;
+          margin-top: 3px;
+          .user-name {
+            font-weight: bold;
+            font-size: 0.8125rem;
+            white-space: nowrap;
+          }
+          .last-convo-date {
+            font-size: 0.67rem;
+            color: $dark-grey;
+            white-space: nowrap;
+          }
+          svg {
+          }
         }
         &:hover {
           cursor: pointer;
         }
       }
     }
-  }
-  .conversation {
-    height: 75px;
-    width: 80px;
-    padding: 20px 20px;
-    display: inline-block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .user-img {
-      border-radius: 50%;
-      height: 60px;
-      width: 60px;
-      background-color: $header-grey;
-      margin: 0 40px 0 40px;
-
-      svg {
-        padding: 15px 18px;
+    #add-convo {
+      border: none;
+      border-radius: 2px;
+      background-color: $green;
+      color: #fff;
+      height: 55px;
+      width: 300px;
+      margin: 10px 0px 0px 25px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      span {
+        vertical-align: middle;
+        text-align: center;
+        padding-bottom: 20px;
+        svg {
+          position: relative;
+          top: 10%;
+          right: 3.5%;
+        }
       }
-    }
-    .user-details {
-      height: 100%;
-      .user-name {
-        display: flex;
-        flex-direction: column;
-        font-weight: bold;
-        font-size: 13px;
-        white-space: nowrap;
-      }
-      .last-convo-date {
-        font-size: 12px;
-        color: $dark-grey;
-        white-space: nowrap;
-      }
-      svg {
+      &:hover {
+        cursor: pointer;
       }
     }
   }
 }
 
 @media screen and (max-width: 1280px) {
-  #sidebar {
-    #logout {
-      top: 50%;
+  body {
+    #sidebar {
+      #logout {
+        top: 50%;
+      }
+      svg {
+        height: 20px;
+      }
+      &:hover {
+        cursor: pointer;
+      }
     }
-    svg {
-      height: 20px;
-    }
-    &:hover {
-      cursor: pointer;
+    #main-content {
+      #filter {
+        #add-filter {
+          left: 42%;
+        }
+      }
+      #article-list {
+        #right-column,
+        #left-column {
+          .article {
+            margin-bottom: 20px;
+            width: 250px;
+            .article-title {
+              font-size: 17px;
+            }
+          }
+        }
+      }
     }
   }
 }
