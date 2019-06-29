@@ -12,6 +12,8 @@ body {
   grid-template-columns: 225px auto 360px; }
   body #sidebar {
     position: fixed;
+    grid-column: 1 /-4;
+    grid-row: 1 / 4;
     background-color: #000b18;
     width: 225px;
     height: 100vh;
@@ -19,19 +21,18 @@ body {
     body #sidebar #logo {
       margin: 15px 35px; }
     body #sidebar ul {
-      margin-top: 10px;
+      margin-top: 0px;
       padding-left: 15px;
       list-style-type: none; }
       body #sidebar ul li {
         vertical-align: middle;
         font-weight: 500;
-        font-size: 0.875rem;
-        margin-bottom: 20px; }
+        font-size: 0.875rem; }
         body #sidebar ul li svg {
           position: relative;
-          top: 25%;
-          margin-right: 10px;
-          height: 20px; }
+          top: 24px;
+          margin-right: 14px;
+          height: 60px; }
         body #sidebar ul li.active {
           color: #fff; }
         body #sidebar ul li a {
@@ -39,7 +40,7 @@ body {
           color: inherit; }
     body #sidebar #logout {
       position: relative;
-      top: 63%;
+      top: 53%;
       padding-left: 15px;
       font-size: 14px; }
       body #sidebar #logout svg {
@@ -61,10 +62,8 @@ body {
       margin: 26px 15px 15px 15px; }
     body #header :hover {
       cursor: pointer; }
-    body #header .header-icons .active-circle {
-      border-radius: 50%;
-      background-color: white; }
     body #header .header-icons svg {
+      padding: 0 6px 5px 0;
       margin: 25px 36px 15px 5px; }
   body #main-content {
     grid-row: 2;
@@ -104,70 +103,82 @@ body {
         body #main-content #filter #add-filter svg {
           height: 30px; }
     body #main-content #article-list {
-      margin: 30px 20px 0 35px;
+      margin: 30px 0 0 30px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 0px; }
-      body #main-content #article-list #left-column .article,
-      body #main-content #article-list #right-column .article {
-        padding: 20px 20px;
-        border: 2px solid #dcdcdc;
-        height: 70px;
-        width: 380px;
-        margin-bottom: 8px; }
-        body #main-content #article-list #left-column .article .article-date,
-        body #main-content #article-list #right-column .article .article-date {
-          color: #a9a9a9;
-          font-size: 13px;
-          font-weight: 500; }
-        body #main-content #article-list #left-column .article .article-title,
-        body #main-content #article-list #right-column .article .article-title {
-          color: #000;
-          text-transform: capitalize;
-          font-size: 1.3rem;
-          font-weight: 500;
-          margin-top: 1px;
-          margin-bottom: 0px; }
-        body #main-content #article-list #left-column .article .author,
-        body #main-content #article-list #right-column .article .author {
-          color: #ddcb37;
-          font-size: 12px;
-          font-weight: 500; }
-        body #main-content #article-list #left-column .article .edit,
-        body #main-content #article-list #right-column .article .edit {
-          position: relative;
-          left: 101%;
-          bottom: 88px;
+      body #main-content #article-list #left-column,
+      body #main-content #article-list #right-column {
+        width: 480px; }
+        body #main-content #article-list #left-column .article,
+        body #main-content #article-list #right-column .article {
+          padding: 20px 20px;
           border: 2px solid #dcdcdc;
-          background-color: #fff;
-          border-radius: 50%;
-          height: 30px;
-          width: 30px;
-          border-radius: 50%; }
-          body #main-content #article-list #left-column .article .edit svg,
-          body #main-content #article-list #right-column .article .edit svg {
-            padding: 4px 0 0 4px;
-            height: 17px; }
-        body #main-content #article-list #left-column .article .delete,
-        body #main-content #article-list #right-column .article .delete {
-          position: relative;
-          left: 101%;
-          bottom: 78px;
-          border: 2px solid #dcdcdc;
-          background-color: #fff;
-          height: 30px;
-          width: 30px;
-          border-radius: 50%;
-          z-index: 1000; }
-          body #main-content #article-list #left-column .article .delete svg,
-          body #main-content #article-list #right-column .article .delete svg {
-            padding: 6px 0 0 4px;
-            height: 16px; }
+          height: 85px;
+          width: 445px;
+          margin-bottom: 20px; }
+          body #main-content #article-list #left-column .article:hover,
+          body #main-content #article-list #right-column .article:hover {
+            cursor: pointer; }
+          body #main-content #article-list #left-column .article .article-date,
+          body #main-content #article-list #right-column .article .article-date {
+            color: #a9a9a9;
+            font-size: 0.8rem;
+            font-weight: 500; }
+          body #main-content #article-list #left-column .article .article-title,
+          body #main-content #article-list #right-column .article .article-title {
+            color: #000;
+            text-transform: capitalize;
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-top: 1px;
+            margin-bottom: 3px; }
+          body #main-content #article-list #left-column .article .author,
+          body #main-content #article-list #right-column .article .author {
+            color: #ddcb37;
+            font-size: 0.8rem;
+            font-weight: 500; }
+          body #main-content #article-list #left-column .article .edit,
+          body #main-content #article-list #right-column .article .edit {
+            position: relative;
+            left: 101%;
+            bottom: 90px;
+            border: 2px solid #dcdcdc;
+            background-color: #fff;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%; }
+            body #main-content #article-list #left-column .article .edit svg,
+            body #main-content #article-list #right-column .article .edit svg {
+              padding: 4px 0 0 4px;
+              height: 17px; }
+            body #main-content #article-list #left-column .article .edit:hover,
+            body #main-content #article-list #right-column .article .edit:hover {
+              cursor: pointer; }
+          body #main-content #article-list #left-column .article .delete,
+          body #main-content #article-list #right-column .article .delete {
+            position: relative;
+            left: 101%;
+            bottom: 80px;
+            border: 2px solid #dcdcdc;
+            background-color: #fff;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            z-index: 1000; }
+            body #main-content #article-list #left-column .article .delete svg,
+            body #main-content #article-list #right-column .article .delete svg {
+              padding: 6px 0 0 4px;
+              height: 16px; }
+            body #main-content #article-list #left-column .article .delete:hover,
+            body #main-content #article-list #right-column .article .delete:hover {
+              cursor: pointer; }
   body #convo-section {
     grid-row: 2;
     grid-column: 3;
     width: 360px;
-    height: 100vh;
+    height: 100%;
     list-style-type: none;
     border-left: 2.8px solid #dcdcdc; }
     body #convo-section .tabs ul {
@@ -214,6 +225,11 @@ body {
             font-size: 0.67rem;
             color: #a9a9a9;
             white-space: nowrap; }
+          body #convo-section .individ-convos .conversation .user-details .chevron {
+            height: 20px;
+            position: relative;
+            left: 220px;
+            bottom: 30px; }
         body #convo-section .individ-convos .conversation:hover {
           cursor: pointer; }
     body #convo-section #add-convo {
@@ -240,17 +256,20 @@ body {
 
 @media screen and (max-width: 1280px) {
   body #sidebar #logout {
-    top: 50%; }
+    top: 36%; }
   body #sidebar svg {
     height: 20px; }
   body #sidebar:hover {
     cursor: pointer; }
   body #main-content #filter #add-filter {
     left: 42%; }
-  body #main-content #article-list #right-column .article,
-  body #main-content #article-list #left-column .article {
-    margin-bottom: 20px;
-    width: 250px; }
-    body #main-content #article-list #right-column .article .article-title,
-    body #main-content #article-list #left-column .article .article-title {
-      font-size: 17px; } }
+  body #main-content #article-list #right-column,
+  body #main-content #article-list #left-column {
+    width: 0; }
+    body #main-content #article-list #right-column .article,
+    body #main-content #article-list #left-column .article {
+      margin-bottom: 20px;
+      width: 250px; }
+      body #main-content #article-list #right-column .article .article-title,
+      body #main-content #article-list #left-column .article .article-title {
+        font-size: 17px; } }
