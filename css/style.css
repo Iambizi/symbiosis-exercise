@@ -40,7 +40,7 @@ body {
           color: inherit; }
     body #sidebar #logout {
       position: relative;
-      top: 56%;
+      top: 510px;
       padding-left: 15px;
       font-size: 14px; }
       body #sidebar #logout svg {
@@ -255,6 +255,8 @@ body {
         cursor: pointer; }
 
 @media screen and (max-width: 1440px) {
+  body #sidebar #logout {
+    top: 260px; }
   body #sidebar svg {
     height: 20px; }
   body #sidebar:hover {

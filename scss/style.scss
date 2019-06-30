@@ -55,7 +55,8 @@ body {
     }
     #logout {
       position: relative;
-      top: 56%;
+      top: 510px;
+      // margin-top: 500px;
       padding-left: 15px;
       font-size: 14px;
       svg {
@@ -316,9 +317,9 @@ body {
 @media screen and (max-width: 1440px) {
   body {
     #sidebar {
-      // #logout {
-      //   top: 56%;
-      // }
+      #logout {
+        top: 260px;
+      }
       svg {
         height: 20px;
       }
