@@ -12,7 +12,7 @@ body {
   overflow-x: hidden; }
   body #sidebar {
     position: fixed;
-    grid-column: 1 /-4;
+    grid-column: 1 / -4;
     grid-row: 1 / 4;
     background-color: #000b18;
     width: 225px;

@@ -21,15 +21,17 @@ body {
   overflow-x: hidden;
   #sidebar {
     position: fixed;
-    grid-column: 1 /-4;
+    grid-column: 1 / -4;
     grid-row: 1 / 4;
+    background-color: $sidebar;
+    width: 225px;
+    // left: -225px;
+    height: 100vh;
+    color: $dark-grey;
     #logo {
       margin: 15px 35px;
     }
-    background-color: $sidebar;
-    width: 225px;
-    height: 100vh;
-    color: $dark-grey;
+
     ul {
       margin-top: 0px;
       padding-left: 15px;
