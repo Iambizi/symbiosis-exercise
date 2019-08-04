@@ -316,7 +316,7 @@ body {
 }
 
 //Responsive center
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1440px) {
   body {
     #sidebar {
       #logout {
@@ -495,7 +495,7 @@ body {
   }
 }
 
-@media screen and (min-width: 980px) {
+@media screen and (max-width: 980px) {
   body {
     #sidebar {
       // #logout {
