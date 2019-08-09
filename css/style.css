@@ -457,12 +457,11 @@ body {
       margin-top: 32px; }
     body #main-content #filter input {
       margin-top: 29px;
-      margin-left: 18px;
       height: 20px;
-      width: 100px;
+      width: 180px;
       font-size: 12px; }
     body #main-content #filter #add-filter {
-      left: 12%;
+      left: 18%;
       margin: 24px 10px 0 0;
       border-radius: 2px;
       height: 35px;
@@ -474,14 +473,14 @@ body {
         height: 19px;
         width: 19px; }
     body #main-content #article-list {
-      grid-template-columns: 1fr; }
+      grid-template-columns: 1fr 1fr; }
       body #main-content #article-list #right-column,
       body #main-content #article-list #left-column {
         width: 0; }
         body #main-content #article-list #right-column .article,
         body #main-content #article-list #left-column .article {
           margin-bottom: 20px;
-          width: 200px;
+          width: 135px;
           height: 68px; }
           body #main-content #article-list #right-column .article .edit,
           body #main-content #article-list #left-column .article .edit {
