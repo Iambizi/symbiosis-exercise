@@ -11,6 +11,9 @@ body {
   display: grid;
   grid-template-columns: 225px auto 360px;
   overflow-x: hidden; }
+  @media only screen and (min-width: 690px) and (max-width: 800px) {
+    body {
+      grid-template-columns: 150px auto 220px; } }
   body #sidebar {
     position: fixed;
     grid-column: 1 / -4;
@@ -19,6 +22,9 @@ body {
     width: 225px;
     height: 100vh;
     color: #a9a9a9; }
+    @media only screen and (min-width: 690px) and (max-width: 800px) {
+      body #sidebar {
+        width: 150px; } }
     body #sidebar #logo {
       margin: 15px 35px; }
     body #sidebar ul {
@@ -51,6 +57,45 @@ body {
       body #sidebar #logout a {
         text-decoration: none;
         color: inherit; }
+  @media only screen and (min-width: 690px) and (max-width: 800px) {
+    body #sidebar {
+      width: 150px; }
+      body #sidebar #logo {
+        width: 65%; }
+      body #sidebar ul {
+        margin-top: 0px;
+        padding-left: 15px;
+        list-style-type: none; }
+        body #sidebar ul li {
+          vertical-align: middle;
+          font-weight: 500;
+          font-size: 0.77rem; }
+          body #sidebar ul li svg {
+            position: relative;
+            top: 16px;
+            margin-right: 14px;
+            height: 50px; }
+          body #sidebar ul li.active {
+            color: #fff; }
+          body #sidebar ul li a {
+            text-decoration: none;
+            color: inherit; }
+      body #sidebar svg {
+        height: 17px; }
+      body #sidebar:hover {
+        cursor: pointer; }
+      body #sidebar #logout {
+        position: relative;
+        top: 520px;
+        padding-left: 15px;
+        font-size: 0.77rem; }
+        body #sidebar #logout svg {
+          position: relative;
+          top: 5px;
+          margin-right: 10px; }
+        body #sidebar #logout a {
+          text-decoration: none;
+          color: inherit; } }
   body #header {
     display: flex;
     justify-content: space-between;
@@ -66,6 +111,22 @@ body {
     body #header .header-icons svg {
       padding: 0 6px 5px 0;
       margin: 25px 36px 15px 5px; }
+  @media only screen and (min-width: 690px) and (max-width: 800px) {
+    body #header {
+      display: flex;
+      justify-content: space-between;
+      grid-column: 2 / 4;
+      grid-row: 1;
+      width: 100%;
+      height: 80px;
+      background-color: #dcdcdc; }
+      body #header #menu {
+        margin: 26px 15px 15px 15px; }
+      body #header :hover {
+        cursor: pointer; }
+      body #header .header-icons svg {
+        padding: 0 5px 4px 0;
+        margin: 25px 30px 15px 2px; } }
   body #main-content {
     grid-row: 2;
     grid-column: 2; }
@@ -175,6 +236,51 @@ body {
             body #main-content #article-list #left-column .article .delete:hover,
             body #main-content #article-list #right-column .article .delete:hover {
               cursor: pointer; }
+  @media only screen and (min-width: 690px) and (max-width: 800px) {
+    body #main-content #filter svg#funnel {
+      margin: 30px 10px 0 20px;
+      height: 19px; }
+    body #main-content #filter p {
+      font-weight: 500;
+      font-size: 0.87rem;
+      margin-top: 32px; }
+    body #main-content #filter input {
+      margin-top: 29px;
+      margin-left: 18px;
+      height: 20px;
+      width: 100px;
+      font-size: 12px; }
+    body #main-content #filter #add-filter {
+      left: 12%;
+      margin: 24px 10px 0 0;
+      border-radius: 2px;
+      height: 35px;
+      width: 35px;
+      border: none; }
+      body #main-content #filter #add-filter:hover {
+        cursor: pointer; }
+      body #main-content #filter #add-filter svg {
+        height: 19px;
+        width: 19px; }
+    body #main-content #article-list {
+      grid-template-columns: 1fr; }
+      body #main-content #article-list #right-column,
+      body #main-content #article-list #left-column {
+        width: 0; }
+        body #main-content #article-list #right-column .article,
+        body #main-content #article-list #left-column .article {
+          margin-bottom: 20px;
+          width: 200px;
+          height: 68px; }
+          body #main-content #article-list #right-column .article .edit,
+          body #main-content #article-list #left-column .article .edit {
+            bottom: 75px; }
+          body #main-content #article-list #right-column .article .delete,
+          body #main-content #article-list #left-column .article .delete {
+            bottom: 65px; }
+          body #main-content #article-list #right-column .article .article-title,
+          body #main-content #article-list #left-column .article .article-title {
+            font-size: 0.7rem; } }
   body #convo-section {
     grid-row: 2;
     grid-column: 3;
@@ -254,117 +360,7 @@ body {
           right: 3.5%; }
       body #convo-section #add-convo:hover {
         cursor: pointer; }
-
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  /*--- Mobile portrait ---*/ }
-
-@media only screen and (min-width: 480px) and (max-width: 595px) {
-  /*--- Mobile landscape ---*/ }
-
-@media only screen and (min-width: 595px) and (max-width: 690px) {
-  /*--- Small tablet portrait ---*/ }
-
-@media only screen and (min-width: 690px) and (max-width: 800px) {
-  /*--- Tablet portrait ---*/
-  body {
-    grid-template-columns: 150px auto 220px; }
-    body #sidebar {
-      width: 150px; }
-      body #sidebar #logo {
-        width: 65%; }
-      body #sidebar ul {
-        margin-top: 0px;
-        padding-left: 15px;
-        list-style-type: none; }
-        body #sidebar ul li {
-          vertical-align: middle;
-          font-weight: 500;
-          font-size: 0.77rem; }
-          body #sidebar ul li svg {
-            position: relative;
-            top: 16px;
-            margin-right: 14px;
-            height: 50px; }
-          body #sidebar ul li.active {
-            color: #fff; }
-          body #sidebar ul li a {
-            text-decoration: none;
-            color: inherit; }
-      body #sidebar svg {
-        height: 17px; }
-      body #sidebar:hover {
-        cursor: pointer; }
-      body #sidebar #logout {
-        position: relative;
-        top: 520px;
-        padding-left: 15px;
-        font-size: 0.77rem; }
-        body #sidebar #logout svg {
-          position: relative;
-          top: 5px;
-          margin-right: 10px; }
-        body #sidebar #logout a {
-          text-decoration: none;
-          color: inherit; }
-    body #header {
-      display: flex;
-      justify-content: space-between;
-      grid-column: 2 / 4;
-      grid-row: 1;
-      width: 100%;
-      height: 80px;
-      background-color: #dcdcdc; }
-      body #header #menu {
-        margin: 26px 15px 15px 15px; }
-      body #header :hover {
-        cursor: pointer; }
-      body #header .header-icons svg {
-        padding: 0 5px 4px 0;
-        margin: 25px 30px 15px 2px; }
-    body #main-content #filter svg#funnel {
-      margin: 30px 10px 0 20px;
-      height: 19px; }
-    body #main-content #filter p {
-      font-weight: 500;
-      font-size: 0.87rem;
-      margin-top: 32px; }
-    body #main-content #filter input {
-      margin-top: 29px;
-      margin-left: 18px;
-      height: 20px;
-      width: 100px;
-      font-size: 12px; }
-    body #main-content #filter #add-filter {
-      left: 12%;
-      margin: 24px 10px 0 0;
-      border-radius: 2px;
-      height: 35px;
-      width: 35px;
-      border: none; }
-      body #main-content #filter #add-filter:hover {
-        cursor: pointer; }
-      body #main-content #filter #add-filter svg {
-        height: 19px;
-        width: 19px; }
-    body #main-content #article-list {
-      grid-template-columns: 1fr; }
-      body #main-content #article-list #right-column,
-      body #main-content #article-list #left-column {
-        width: 0; }
-        body #main-content #article-list #right-column .article,
-        body #main-content #article-list #left-column .article {
-          margin-bottom: 20px;
-          width: 200px;
-          height: 68px; }
-          body #main-content #article-list #right-column .article .edit,
-          body #main-content #article-list #left-column .article .edit {
-            bottom: 75px; }
-          body #main-content #article-list #right-column .article .delete,
-          body #main-content #article-list #left-column .article .delete {
-            bottom: 65px; }
-          body #main-content #article-list #right-column .article .article-title,
-          body #main-content #article-list #left-column .article .article-title {
-            font-size: 0.7rem; }
+  @media only screen and (min-width: 690px) and (max-width: 800px) {
     body #convo-section {
       width: 220px; }
       body #convo-section .individ-convos {
@@ -391,133 +387,3 @@ body {
           height: 20px;
           width: 20px;
           right: 1%; } }
-
-@media only screen and (min-width: 800px) and (max-width: 924px) {
-  /*--- Small tablet landscape ---*/
-  body {
-    grid-template-columns: 150px auto 220px; }
-    body #sidebar {
-      width: 150px; }
-      body #sidebar #logo {
-        width: 65%; }
-      body #sidebar ul {
-        margin-top: 0px;
-        padding-left: 15px;
-        list-style-type: none; }
-        body #sidebar ul li {
-          vertical-align: middle;
-          font-weight: 500;
-          font-size: 0.77rem; }
-          body #sidebar ul li svg {
-            position: relative;
-            top: 16px;
-            margin-right: 14px;
-            height: 50px; }
-          body #sidebar ul li.active {
-            color: #fff; }
-          body #sidebar ul li a {
-            text-decoration: none;
-            color: inherit; }
-      body #sidebar svg {
-        height: 17px; }
-      body #sidebar:hover {
-        cursor: pointer; }
-      body #sidebar #logout {
-        position: relative;
-        top: 520px;
-        padding-left: 15px;
-        font-size: 0.77rem; }
-        body #sidebar #logout svg {
-          position: relative;
-          top: 5px;
-          margin-right: 10px; }
-        body #sidebar #logout a {
-          text-decoration: none;
-          color: inherit; }
-    body #header {
-      display: flex;
-      justify-content: space-between;
-      grid-column: 2 / 4;
-      grid-row: 1;
-      width: 100%;
-      height: 80px;
-      background-color: #dcdcdc; }
-      body #header #menu {
-        margin: 26px 15px 15px 15px; }
-      body #header :hover {
-        cursor: pointer; }
-      body #header .header-icons svg {
-        padding: 0 5px 4px 0;
-        margin: 25px 30px 15px 2px; }
-    body #main-content #filter svg#funnel {
-      margin: 30px 10px 0 20px;
-      height: 19px; }
-    body #main-content #filter p {
-      font-weight: 500;
-      font-size: 0.87rem;
-      margin-top: 32px; }
-    body #main-content #filter input {
-      margin-top: 29px;
-      height: 20px;
-      width: 180px;
-      font-size: 12px; }
-    body #main-content #filter #add-filter {
-      left: 18%;
-      margin: 24px 10px 0 0;
-      border-radius: 2px;
-      height: 35px;
-      width: 35px;
-      border: none; }
-      body #main-content #filter #add-filter:hover {
-        cursor: pointer; }
-      body #main-content #filter #add-filter svg {
-        height: 19px;
-        width: 19px; }
-    body #main-content #article-list {
-      grid-template-columns: 1fr 1fr; }
-      body #main-content #article-list #right-column,
-      body #main-content #article-list #left-column {
-        width: 0; }
-        body #main-content #article-list #right-column .article,
-        body #main-content #article-list #left-column .article {
-          margin-bottom: 20px;
-          width: 145px;
-          height: 68px; }
-          body #main-content #article-list #right-column .article .edit,
-          body #main-content #article-list #left-column .article .edit {
-            bottom: 75px; }
-          body #main-content #article-list #right-column .article .delete,
-          body #main-content #article-list #left-column .article .delete {
-            bottom: 65px; }
-          body #main-content #article-list #right-column .article .article-title,
-          body #main-content #article-list #left-column .article .article-title {
-            font-size: 0.7rem; }
-    body #convo-section {
-      width: 220px; }
-      body #convo-section .individ-convos {
-        padding: 20px 0 0 16px; }
-        body #convo-section .individ-convos .conversation {
-          width: 50px;
-          height: 68px; }
-          body #convo-section .individ-convos .conversation .user-img {
-            border-radius: 50%;
-            height: 30px;
-            width: 30px; }
-            body #convo-section .individ-convos .conversation .user-img svg {
-              height: 15px;
-              width: 15px;
-              padding: 8px 8px; }
-          body #convo-section .individ-convos .conversation .user-details .chevron {
-            left: 120px;
-            height: 15px; }
-      body #convo-section #add-convo {
-        width: 180px;
-        font-size: 0.75rem;
-        letter-spacing: 0; }
-        body #convo-section #add-convo span svg {
-          height: 20px;
-          width: 20px;
-          right: 1%; } }
-
-@media only screen and (min-width: 1024px) and (max-width: 1224px) {
-  /*--- Tablet landscape --- */ }

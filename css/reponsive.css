@@ -135,12 +135,14 @@
           width: 20px;
           right: 1%; } }
 
-@media only screen and (min-width: 800px) and (max-width: 924px) {
+@media only screen and (min-width: 800px) and (max-width: 900px) {
   /*--- Small tablet landscape ---*/
   body {
     grid-template-columns: 150px auto 220px; }
     body #sidebar {
       width: 150px; }
+      body #sidebar #logout {
+        top: 48%; }
       body #sidebar #logo {
         width: 65%; }
       body #sidebar ul {
@@ -224,7 +226,7 @@
         body #main-content #article-list #right-column .article,
         body #main-content #article-list #left-column .article {
           margin-bottom: 20px;
-          width: 145px;
+          width: 135px;
           height: 68px; }
           body #main-content #article-list #right-column .article .edit,
           body #main-content #article-list #left-column .article .edit {

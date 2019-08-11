@@ -381,14 +381,14 @@ $yellow: #ddcb37;
     }
   }
 }
-@media only screen and (min-width: 800px) and (max-width: 924px) {
+@media only screen and (min-width: 800px) and (max-width: 900px) {
   /*--- Small tablet landscape ---*/
   body {
     grid-template-columns: 150px auto 220px;
     #sidebar {
-      // #logout {
-      //   top: 48%;
-      // }
+      #logout {
+        top: 48%;
+      }
       width: 150px;
       #logo {
         width: 65%;
@@ -507,7 +507,7 @@ $yellow: #ddcb37;
               bottom: 65px;
             }
             margin-bottom: 20px;
-            width: 145px;
+            width: 135px;
             height: 68px;
             .article-title {
               font-size: 0.7rem;
