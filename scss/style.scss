@@ -28,7 +28,7 @@ body {
   display: grid;
   grid-template-columns: 225px auto 360px;
   overflow-x: hidden;
-  @media only screen and (min-width: $s) and (max-width: $m) {
+  @media only screen and (min-width: $s) and (max-width: $m1) {
     grid-template-columns: 150px auto 220px;
   }
   @media only screen and (min-width: $m1) and (max-width: $m2) {
