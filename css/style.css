@@ -270,6 +270,16 @@ body {
         margin-bottom: 20px;
         width: 135px;
         height: 68px; } }
+  @media only screen and (min-width: 900px) {
+    body #main-content #filter input {
+      margin-top: 26px;
+      height: 25px;
+      width: 260px; }
+    body #main-content #filter #add-filter {
+      left: 16%; }
+    body #main-content #article-list #right-column .article,
+    body #main-content #article-list #left-column .article {
+      width: 170px; } }
   body #convo-section {
     grid-row: 2;
     grid-column: 3;

@@ -360,6 +360,34 @@ body {
       }
     }
   }
+  @media only screen and (min-width: $m2) {
+    #main-content {
+      #filter {
+        svg#funnel {
+          // margin: 30px 10px 0 20px;
+          // height: 19px;
+        }
+        input {
+          margin-top: 26px;
+          height: 25px;
+          width: 260px;
+          // font-size: 12px;
+        }
+        #add-filter {
+          left: 16%;
+        }
+      }
+      #article-list {
+        #right-column,
+        #left-column {
+          .article {
+            // margin-bottom: 20px;
+            width: 170px;
+          }
+        }
+      }
+    }
+  }
   #convo-section {
     grid-row: 2;
     grid-column: 3;
