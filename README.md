@@ -1,3 +1,3 @@
 # Symbiosis-test
 
-Reproduction d'une maquette, pour test d'integration.
+Responsiveness based on a Mobile first approach
