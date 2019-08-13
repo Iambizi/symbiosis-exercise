@@ -320,12 +320,20 @@ body {
     body #main-content #article-list #left-column .article {
       width: 220px; } }
   @media only screen and (min-width: 1100px) {
+    body #main-content #filter svg#funnel {
+      margin: 30px 10px 0 20px;
+      height: 23px; }
     body #main-content #filter input {
       margin-top: 26px;
-      height: 25px;
-      width: 370px; }
+      height: 30px;
+      width: 400px;
+      font-size: 13px; }
     body #main-content #filter #add-filter {
-      left: 16%; }
+      margin: 23px 20px 0 0;
+      border-radius: 2px;
+      height: 40px;
+      width: 40px;
+      left: 19%; }
     body #main-content #article-list #right-column .article,
     body #main-content #article-list #left-column .article {
       width: 270px;
