@@ -14,6 +14,9 @@ body {
   @media only screen and (min-width: 690px) {
     body {
       grid-template-columns: 150px auto 220px; } }
+  @media only screen and (min-width: 1100px) {
+    body {
+      grid-template-columns: 200px auto 280px; } }
   body #sidebar {
     position: fixed;
     grid-column: 1 / -4;
@@ -78,6 +81,32 @@ body {
         font-size: 0.77rem; }
         body #sidebar #logout svg {
           top: 9px;
+          margin-right: 10px; } }
+  @media only screen and (min-width: 1100px) {
+    body #sidebar {
+      width: 200px; }
+      body #sidebar #logo {
+        width: 70%; }
+      body #sidebar ul {
+        margin-top: 0px;
+        padding-left: 15px;
+        list-style-type: none; }
+        body #sidebar ul li {
+          font-size: 0.85rem; }
+          body #sidebar ul li svg {
+            top: 20px;
+            margin-right: 14px;
+            height: 50px; }
+      body #sidebar svg {
+        height: 17px; }
+      body #sidebar:hover {
+        cursor: pointer; }
+      body #sidebar #logout {
+        top: 520px;
+        padding-left: 15px;
+        font-size: 0.85rem; }
+        body #sidebar #logout svg {
+          top: 20px;
           margin-right: 10px; } }
   body #header {
     display: flex;
@@ -280,6 +309,37 @@ body {
     body #main-content #article-list #right-column .article,
     body #main-content #article-list #left-column .article {
       width: 170px; } }
+  @media only screen and (min-width: 1000px) {
+    body #main-content #filter input {
+      margin-top: 26px;
+      height: 25px;
+      width: 340px; }
+    body #main-content #filter #add-filter {
+      left: 16%; }
+    body #main-content #article-list #right-column .article,
+    body #main-content #article-list #left-column .article {
+      width: 220px; } }
+  @media only screen and (min-width: 1100px) {
+    body #main-content #filter input {
+      margin-top: 26px;
+      height: 25px;
+      width: 370px; }
+    body #main-content #filter #add-filter {
+      left: 16%; }
+    body #main-content #article-list #right-column .article,
+    body #main-content #article-list #left-column .article {
+      width: 270px;
+      margin-bottom: 20px;
+      height: 68px; }
+      body #main-content #article-list #right-column .article .edit,
+      body #main-content #article-list #left-column .article .edit {
+        bottom: 65px; }
+      body #main-content #article-list #right-column .article .delete,
+      body #main-content #article-list #left-column .article .delete {
+        bottom: 55px; }
+      body #main-content #article-list #right-column .article .article-title,
+      body #main-content #article-list #left-column .article .article-title {
+        font-size: 0.75rem; } }
   body #convo-section {
     grid-row: 2;
     grid-column: 3;
@@ -380,6 +440,32 @@ body {
       body #convo-section #add-convo {
         width: 180px;
         font-size: 0.75rem;
+        letter-spacing: 0; }
+        body #convo-section #add-convo span svg {
+          height: 20px;
+          width: 20px;
+          right: 1%; } }
+  @media only screen and (min-width: 1100px) {
+    body #convo-section {
+      width: 280px; }
+      body #convo-section .individ-convos {
+        padding: 20px 0 0 16px; }
+        body #convo-section .individ-convos .conversation {
+          width: 70px;
+          height: 68px; }
+          body #convo-section .individ-convos .conversation .user-img {
+            height: 30px;
+            width: 30px; }
+            body #convo-section .individ-convos .conversation .user-img svg {
+              height: 15px;
+              width: 15px;
+              padding: 8px 8px; }
+          body #convo-section .individ-convos .conversation .user-details .chevron {
+            left: 165px;
+            height: 15px; }
+      body #convo-section #add-convo {
+        width: 220px;
+        font-size: 0.8rem;
         letter-spacing: 0; }
         body #convo-section #add-convo span svg {
           height: 20px;
