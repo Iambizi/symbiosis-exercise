@@ -11,10 +11,7 @@ body {
   display: grid;
   grid-template-columns: 225px auto 360px;
   overflow-x: hidden; }
-  @media only screen and (min-width: 690px) and (max-width: 800px) {
-    body {
-      grid-template-columns: 150px auto 220px; } }
-  @media only screen and (min-width: 800px) and (max-width: 900px) {
+  @media only screen and (min-width: 690px) {
     body {
       grid-template-columns: 150px auto 220px; } }
   body #sidebar {
@@ -57,7 +54,7 @@ body {
       body #sidebar #logout a {
         text-decoration: none;
         color: inherit; }
-  @media only screen and (min-width: 690px) and (max-width: 800px) {
+  @media only screen and (min-width: 690px) {
     body #sidebar {
       width: 150px; }
       body #sidebar #logo {
@@ -96,7 +93,7 @@ body {
         body #sidebar #logout a {
           text-decoration: none;
           color: inherit; } }
-  @media only screen and (min-width: 800px) and (max-width: 900px) {
+  @media only screen and (min-width: 800px) {
     body #sidebar {
       width: 150px; }
       body #sidebar #logout {
@@ -152,7 +149,7 @@ body {
     body #header .header-icons svg {
       padding: 0 6px 5px 0;
       margin: 25px 36px 15px 5px; }
-  @media only screen and (min-width: 690px) and (max-width: 800px) {
+  @media only screen and (min-width: 690px) {
     body #header {
       display: flex;
       justify-content: space-between;
@@ -168,7 +165,7 @@ body {
       body #header .header-icons svg {
         padding: 0 5px 4px 0;
         margin: 25px 30px 15px 2px; } }
-  @media only screen and (min-width: 800px) and (max-width: 900px) {
+  @media only screen and (min-width: 800px) {
     body #header {
       display: flex;
       justify-content: space-between;
@@ -293,7 +290,7 @@ body {
             body #main-content #article-list #left-column .article .delete:hover,
             body #main-content #article-list #right-column .article .delete:hover {
               cursor: pointer; }
-  @media only screen and (min-width: 690px) and (max-width: 800px) {
+  @media only screen and (min-width: 690px) {
     body #main-content #filter svg#funnel {
       margin: 30px 10px 0 20px;
       height: 19px; }
@@ -338,7 +335,7 @@ body {
           body #main-content #article-list #right-column .article .article-title,
           body #main-content #article-list #left-column .article .article-title {
             font-size: 0.7rem; } }
-  @media only screen and (min-width: 800px) and (max-width: 900px) {
+  @media only screen and (min-width: 800px) {
     body #main-content #filter svg#funnel {
       margin: 30px 10px 0 20px;
       height: 19px; }
@@ -461,7 +458,7 @@ body {
           right: 3.5%; }
       body #convo-section #add-convo:hover {
         cursor: pointer; }
-  @media only screen and (min-width: 690px) and (max-width: 800px) {
+  @media only screen and (min-width: 690px) {
     body #convo-section {
       width: 220px; }
       body #convo-section .individ-convos {
@@ -488,7 +485,7 @@ body {
           height: 20px;
           width: 20px;
           right: 1%; } }
-  @media only screen and (min-width: 800px) and (max-width: 900px) {
+  @media only screen and (min-width: 800px) {
     body #convo-section {
       width: 220px; }
       body #convo-section .individ-convos {
