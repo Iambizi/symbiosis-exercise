@@ -4,10 +4,12 @@ $s: 690px;
 $m1: 800px;
 $m2: 900px;
 $m3: 1000px;
+$meMac: 1055px;
 $l1: 1100px;
 $l2: 1200px;
 $l3: 1300px;
 $xl1: 1400px;
+$meScreen: 1455px;
 $xl2: 1500px;
 
 //Color Variables
@@ -37,6 +39,9 @@ body {
   }
   @media only screen and (min-width: $l1) {
     grid-template-columns: 200px auto 280px;
+  }
+  @media only screen and (min-width: $l2) {
+    grid-template-columns: 225px auto 360px;
   }
   #sidebar {
     position: fixed;
@@ -157,6 +162,42 @@ body {
           margin-right: 10px;
         }
       }
+    }
+  }
+  @media only screen and (min-width: $l2) {
+    #sidebar {
+      width: 225px;
+      // #logo {
+      //   width: 70%;
+      // }
+      // ul {
+      //   margin-top: 0px;
+      //   padding-left: 15px;
+      //   list-style-type: none;
+      //   li {
+      //     font-size: 0.85rem;
+      //     svg {
+      //       top: 20px;
+      //       margin-right: 14px;
+      //       height: 50px;
+      //     }
+      //   }
+      // }
+      // svg {
+      //   height: 17px;
+      // }
+      // &:hover {
+      //   cursor: pointer;
+      // }
+      // #logout {
+      //   top: 520px;
+      //   padding-left: 15px;
+      //   font-size: 0.85rem;
+      //   svg {
+      //     top: 20px;
+      //     margin-right: 10px;
+      //   }
+      // }
     }
   }
   #header {
@@ -425,15 +466,10 @@ body {
   @media only screen and (min-width: $m3) {
     #main-content {
       #filter {
-        svg#funnel {
-          // margin: 30px 10px 0 20px;
-          // height: 19px;
-        }
         input {
           margin-top: 26px;
           height: 25px;
           width: 340px;
-          // font-size: 12px;
         }
         #add-filter {
           left: 16%;
@@ -443,13 +479,34 @@ body {
         #right-column,
         #left-column {
           .article {
-            // margin-bottom: 20px;
             width: 220px;
           }
         }
       }
     }
   }
+  // @media only screen and (min-width: $meMac) {
+  //   #main-content {
+  //     #filter {
+  //       input {
+  //         margin-top: 26px;
+  //         height: 25px;
+  //         width: 340px;
+  //       }
+  //       #add-filter {
+  //         left: 19%;
+  //       }
+  //     }
+  //     #article-list {
+  //       #right-column,
+  //       #left-column {
+  //         .article {
+  //           width: 229px;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
   @media only screen and (min-width: $l1) {
     #main-content {
       #filter {
@@ -460,15 +517,97 @@ body {
         input {
           margin-top: 26px;
           height: 30px;
-          width: 400px;
+          width: 350px;
           font-size: 13px;
         }
         #add-filter {
-          margin: 23px 20px 0 0;
+          margin: 26px 20px 0 0;
           border-radius: 2px;
-          height: 40px;
-          width: 40px;
-          left: 19%;
+          height: 38px;
+          width: 38px;
+          left: 16%;
+        }
+      }
+      #article-list {
+        #right-column,
+        #left-column {
+          .article {
+            width: 230px;
+            .edit {
+              bottom: 65px;
+            }
+            .delete {
+              bottom: 55px;
+            }
+            margin-bottom: 20px;
+            height: 68px;
+            .article-title {
+              font-size: 0.75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: $l2) {
+    #main-content {
+      #filter {
+        // svg#funnel {
+        //   margin: 30px 10px 0 20px;
+        //   height: 23px;
+        // }
+        // input {
+        //   margin-top: 26px;
+        //   height: 30px;
+        //   width: 350px;
+        //   font-size: 13px;
+        // }
+        #add-filter {
+          margin: 20px 20px 0 0;
+          height: 45px;
+          width: 45px;
+          left: 12%;
+        }
+      }
+      #article-list {
+        #right-column,
+        #left-column {
+          .article {
+            width: 220px;
+            .edit {
+              bottom: 65px;
+            }
+            .delete {
+              bottom: 55px;
+            }
+            margin-bottom: 20px;
+            height: 68px;
+            .article-title {
+              font-size: 0.75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: $l3) {
+    #main-content {
+      #filter {
+        // svg#funnel {
+        //   margin: 30px 10px 0 20px;
+        //   height: 23px;
+        // }
+        // input {
+        //   margin-top: 26px;
+        //   height: 30px;
+        //   width: 350px;
+        //   font-size: 13px;
+        // }
+        #add-filter {
+          margin: 20px 20px 0 0;
+          height: 45px;
+          width: 45px;
+          left: 25%;
         }
       }
       #article-list {
@@ -486,6 +625,88 @@ body {
             height: 68px;
             .article-title {
               font-size: 0.75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: $xl1) {
+    #main-content {
+      #filter {
+        // svg#funnel {
+        //   margin: 30px 10px 0 20px;
+        //   height: 23px;
+        // }
+        // input {
+        //   margin-top: 26px;
+        //   height: 30px;
+        //   width: 350px;
+        //   font-size: 13px;
+        // }
+        #add-filter {
+          margin: 20px 20px 0 0;
+          height: 45px;
+          width: 45px;
+          left: 34%;
+        }
+      }
+      #article-list {
+        #right-column,
+        #left-column {
+          .article {
+            width: 310px;
+            .edit {
+              bottom: 65px;
+            }
+            .delete {
+              bottom: 55px;
+            }
+            margin-bottom: 20px;
+            height: 68px;
+            .article-title {
+              font-size: 0.75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: $xl2) {
+    #main-content {
+      #filter {
+        // svg#funnel {
+        //   margin: 30px 10px 0 20px;
+        //   height: 23px;
+        // }
+        // input {
+        //   margin-top: 26px;
+        //   height: 30px;
+        //   width: 350px;
+        //   font-size: 13px;
+        // }
+        #add-filter {
+          margin: 20px 20px 0 0;
+          height: 45px;
+          width: 45px;
+          left: 34%;
+        }
+      }
+      #article-list {
+        #right-column,
+        #left-column {
+          .article {
+            width: 360px;
+            .edit {
+              bottom: 65px;
+            }
+            .delete {
+              bottom: 55px;
+            }
+            margin-bottom: 20px;
+            height: 68px;
+            .article-title {
+              font-size: 0.9rem;
             }
           }
         }
@@ -637,11 +858,11 @@ body {
       .individ-convos {
         padding: 20px 0 0 16px;
         .conversation {
-          width: 70px;
-          height: 68px;
+          // width: 60px;
+          // height: 68px;
           .user-img {
-            height: 30px;
-            width: 30px;
+            // height: 30px;
+            // width: 30px;
             svg {
               height: 15px;
               width: 15px;
@@ -659,6 +880,45 @@ body {
       #add-convo {
         width: 220px;
         font-size: 0.8rem;
+        letter-spacing: 0;
+        span {
+          svg {
+            height: 20px;
+            width: 20px;
+            right: 1%;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: $l2) {
+    #convo-section {
+      width: 360px;
+      .individ-convos {
+        .conversation {
+          width: 70px;
+          height: 68px;
+          .user-img {
+            margin: 0 30px 0 3px;
+            height: 40px;
+            width: 40px;
+            svg {
+              height: 15px;
+              width: 15px;
+              padding: 12px 12px;
+            }
+          }
+          .user-details {
+            .chevron {
+              left: 240px;
+              height: 15px;
+            }
+          }
+        }
+      }
+      #add-convo {
+        width: 280px;
+        font-size: 0.9rem;
         letter-spacing: 0;
         span {
           svg {
