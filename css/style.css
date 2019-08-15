@@ -415,14 +415,17 @@ body {
       body #main-content #article-list #left-column .article .article-title {
         font-size: 0.75rem; } }
   @media only screen and (min-width: 1500px) {
+    body #main-content #filter svg#funnel {
+      margin: 27px 10px 0 20px;
+      height: 25px; }
     body #main-content #filter #add-filter {
       margin: 20px 20px 0 0;
       height: 45px;
       width: 45px;
-      left: 34%; }
+      left: 49%; }
     body #main-content #article-list #right-column .article,
     body #main-content #article-list #left-column .article {
-      width: 360px;
+      width: 430px;
       margin-bottom: 20px;
       height: 68px; }
       body #main-content #article-list #right-column .article .edit,
@@ -433,7 +436,7 @@ body {
         bottom: 55px; }
       body #main-content #article-list #right-column .article .article-title,
       body #main-content #article-list #left-column .article .article-title {
-        font-size: 0.9rem; } }
+        font-size: 1rem; } }
   body #convo-section {
     grid-row: 2;
     grid-column: 3;

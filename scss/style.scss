@@ -501,7 +501,7 @@ body {
   //       #right-column,
   //       #left-column {
   //         .article {
-  //           width: 229px;
+  //           width: 225px;
   //         }
   //       }
   //     }
@@ -675,10 +675,10 @@ body {
   @media only screen and (min-width: $xl2) {
     #main-content {
       #filter {
-        // svg#funnel {
-        //   margin: 30px 10px 0 20px;
-        //   height: 23px;
-        // }
+        svg#funnel {
+          margin: 27px 10px 0 20px;
+          height: 25px;
+        }
         // input {
         //   margin-top: 26px;
         //   height: 30px;
@@ -689,14 +689,14 @@ body {
           margin: 20px 20px 0 0;
           height: 45px;
           width: 45px;
-          left: 34%;
+          left: 49%;
         }
       }
       #article-list {
         #right-column,
         #left-column {
           .article {
-            width: 360px;
+            width: 430px;
             .edit {
               bottom: 65px;
             }
@@ -706,7 +706,7 @@ body {
             margin-bottom: 20px;
             height: 68px;
             .article-title {
-              font-size: 0.9rem;
+              font-size: 1rem;
             }
           }
         }
