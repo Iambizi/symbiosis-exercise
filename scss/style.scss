@@ -1,6 +1,6 @@
 /*Breakpoints */
 $xs: 400px;
-$s: 690px;
+$s: 700px;
 $m1: 800px;
 $m2: 900px;
 $m3: 1000px;
@@ -11,6 +11,7 @@ $l3: 1300px;
 $xl1: 1400px;
 $meScreen: 1455px;
 $xl2: 1500px;
+$xl3: 1600px;
 
 //Color Variables
 $sidebar: #000b18;
@@ -673,6 +674,47 @@ body {
     }
   }
   @media only screen and (min-width: $xl2) {
+    #main-content {
+      #filter {
+        svg#funnel {
+          margin: 27px 10px 0 20px;
+          height: 25px;
+        }
+        // input {
+        //   margin-top: 26px;
+        //   height: 30px;
+        //   width: 350px;
+        //   font-size: 13px;
+        // }
+        #add-filter {
+          margin: 20px 20px 0 0;
+          height: 45px;
+          width: 45px;
+          left: 40%;
+        }
+      }
+      #article-list {
+        #right-column,
+        #left-column {
+          .article {
+            width: 360px;
+            .edit {
+              bottom: 65px;
+            }
+            .delete {
+              bottom: 55px;
+            }
+            margin-bottom: 20px;
+            height: 68px;
+            .article-title {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: $xl3) {
     #main-content {
       #filter {
         svg#funnel {

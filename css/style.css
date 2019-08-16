@@ -11,7 +11,7 @@ body {
   display: grid;
   grid-template-columns: 225px auto 360px;
   overflow-x: hidden; }
-  @media only screen and (min-width: 690px) {
+  @media only screen and (min-width: 700px) {
     body {
       grid-template-columns: 150px auto 220px; } }
   @media only screen and (min-width: 1100px) {
@@ -59,7 +59,7 @@ body {
       body #sidebar #logout a {
         text-decoration: none;
         color: inherit; }
-  @media only screen and (min-width: 690px) {
+  @media only screen and (min-width: 700px) {
     body #sidebar {
       width: 150px; }
       body #sidebar #logo {
@@ -129,7 +129,7 @@ body {
     body #header .header-icons svg {
       padding: 0 6px 5px 0;
       margin: 25px 36px 15px 5px; }
-  @media only screen and (min-width: 690px) {
+  @media only screen and (min-width: 700px) {
     body #header .header-icons svg {
       padding: 0 5px 4px 0;
       margin: 25px 30px 15px 2px; } }
@@ -245,7 +245,7 @@ body {
             body #main-content #article-list #left-column .article .delete:hover,
             body #main-content #article-list #right-column .article .delete:hover {
               cursor: pointer; }
-  @media only screen and (min-width: 690px) {
+  @media only screen and (min-width: 700px) {
     body #main-content #filter svg#funnel {
       margin: 30px 10px 0 20px;
       height: 19px; }
@@ -422,6 +422,29 @@ body {
       margin: 20px 20px 0 0;
       height: 45px;
       width: 45px;
+      left: 40%; }
+    body #main-content #article-list #right-column .article,
+    body #main-content #article-list #left-column .article {
+      width: 360px;
+      margin-bottom: 20px;
+      height: 68px; }
+      body #main-content #article-list #right-column .article .edit,
+      body #main-content #article-list #left-column .article .edit {
+        bottom: 65px; }
+      body #main-content #article-list #right-column .article .delete,
+      body #main-content #article-list #left-column .article .delete {
+        bottom: 55px; }
+      body #main-content #article-list #right-column .article .article-title,
+      body #main-content #article-list #left-column .article .article-title {
+        font-size: 1rem; } }
+  @media only screen and (min-width: 1600px) {
+    body #main-content #filter svg#funnel {
+      margin: 27px 10px 0 20px;
+      height: 25px; }
+    body #main-content #filter #add-filter {
+      margin: 20px 20px 0 0;
+      height: 45px;
+      width: 45px;
       left: 49%; }
     body #main-content #article-list #right-column .article,
     body #main-content #article-list #left-column .article {
@@ -516,7 +539,7 @@ body {
           right: 3.5%; }
       body #convo-section #add-convo:hover {
         cursor: pointer; }
-  @media only screen and (min-width: 690px) {
+  @media only screen and (min-width: 700px) {
     body #convo-section {
       width: 220px; }
       body #convo-section .individ-convos {
