@@ -265,13 +265,13 @@ body {
       width: 100px;
       font-size: 12px; }
     body #main-content #filter #add-filter {
-      left: 12%;
+      left: 19%;
       margin: 24px 10px 0 0;
       border-radius: 2px;
       height: 35px;
-      width: 35px; }
-    body #main-content #filter svg {
-      height: 25px; }
+      width: 38px; }
+      body #main-content #filter #add-filter svg {
+        height: 19px; }
     body #main-content #article-list {
       grid-template-columns: 1fr; }
       body #main-content #article-list #right-column,
@@ -280,14 +280,14 @@ body {
         body #main-content #article-list #right-column .article,
         body #main-content #article-list #left-column .article {
           margin-bottom: 20px;
-          width: 200px;
+          width: 250px;
           height: 68px; }
           body #main-content #article-list #right-column .article .edit,
           body #main-content #article-list #left-column .article .edit {
-            bottom: 75px; }
+            bottom: 65px; }
           body #main-content #article-list #right-column .article .delete,
           body #main-content #article-list #left-column .article .delete {
-            bottom: 65px; }
+            bottom: 55px; }
           body #main-content #article-list #right-column .article .article-title,
           body #main-content #article-list #left-column .article .article-title {
             font-size: 0.7rem; } }

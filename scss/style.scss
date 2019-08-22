@@ -387,14 +387,14 @@ body {
           font-size: 12px;
         }
         #add-filter {
-          left: 12%;
+          left: 19%;
           margin: 24px 10px 0 0;
           border-radius: 2px;
           height: 35px;
-          width: 35px;
-        }
-        svg {
-          height: 25px;
+          width: 38px;
+          svg {
+            height: 19px;
+          }
         }
       }
       #article-list {
@@ -404,13 +404,13 @@ body {
           width: 0;
           .article {
             .edit {
-              bottom: 75px;
-            }
-            .delete {
               bottom: 65px;
             }
+            .delete {
+              bottom: 55px;
+            }
             margin-bottom: 20px;
-            width: 200px;
+            width: 250px;
             height: 68px;
             .article-title {
               font-size: 0.7rem;
