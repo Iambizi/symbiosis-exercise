@@ -1,5 +1,7 @@
 /*Breakpoints */
-$xs: 400px;
+$xs1: 375px;
+$xs2: 500px;
+$xs3: 600px;
 $s: 700px;
 $m1: 800px;
 $m2: 900px;
@@ -35,6 +37,9 @@ body {
   display: grid;
   grid-template-columns: 225px auto 360px;
   overflow-x: hidden;
+  @media only screen and (min-width: $xs1) {
+    grid-template-columns: 0 auto 0;
+  }
   @media only screen and (min-width: $s) {
     grid-template-columns: 150px auto 220px;
   }
@@ -91,6 +96,11 @@ body {
         text-decoration: none;
         color: inherit;
       }
+    }
+  }
+  @media only screen and (min-width: $xs1) and (max-width: $s) {
+    #sidebar {
+      display: none;
     }
   }
   @media only screen and (min-width: $s) {
@@ -352,6 +362,166 @@ body {
             }
             &:hover {
               cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: $xs1) {
+    #main-content {
+      #filter {
+        svg#funnel {
+          margin: 30px 10px 0 20px;
+          height: 19px;
+        }
+        p {
+          font-size: 0.87rem;
+          margin-top: 32px;
+        }
+        input {
+          margin-top: 29px;
+          margin-left: 18px;
+          height: 20px;
+          width: 100px;
+          font-size: 12px;
+        }
+        #add-filter {
+          left: 12%;
+          margin: 24px 10px 0 0;
+          border-radius: 2px;
+          height: 35px;
+          width: 35px;
+        }
+        svg {
+          height: 25px;
+        }
+      }
+      #article-list {
+        grid-template-columns: 1fr;
+        #right-column,
+        #left-column {
+          width: 0;
+          .article {
+            .edit {
+              bottom: 75px;
+            }
+            .delete {
+              bottom: 65px;
+            }
+            margin-bottom: 20px;
+            width: 200px;
+            height: 68px;
+            .article-title {
+              font-size: 0.7rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: $xs2) {
+    #main-content {
+      #filter {
+        svg#funnel {
+          margin: 30px 10px 0 20px;
+          height: 19px;
+        }
+        p {
+          font-size: 0.87rem;
+          margin-top: 32px;
+        }
+        input {
+          margin-top: 29px;
+          margin-left: 18px;
+          height: 20px;
+          width: 190px;
+          font-size: 12px;
+        }
+        #add-filter {
+          left: 18%;
+          // margin: 24px 10px 0 0;
+          // border-radius: 2px;
+          // height: 35px;
+          // width: 35px;
+          border: none;
+          svg {
+            height: 19px;
+            width: 19px;
+          }
+        }
+      }
+      #article-list {
+        grid-template-columns: 1fr;
+        #right-column,
+        #left-column {
+          width: 0;
+          .article {
+            .edit {
+              bottom: 75px;
+            }
+            .delete {
+              bottom: 65px;
+            }
+            margin-bottom: 20px;
+            width: 280px;
+            height: 68px;
+            .article-title {
+              font-size: 0.75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: $xs3) {
+    #main-content {
+      #filter {
+        svg#funnel {
+          margin: 30px 10px 0 20px;
+          height: 19px;
+        }
+        p {
+          font-size: 0.87rem;
+          margin-top: 32px;
+        }
+        input {
+          margin-top: 29px;
+          margin-left: 18px;
+          height: 24px;
+          width: 210px;
+          font-size: 12px;
+        }
+        #add-filter {
+          left: 18%;
+          // margin: 24px 10px 0 0;
+          // border-radius: 2px;
+          // height: 35px;
+          // width: 35px;
+          border: none;
+          svg {
+            height: 19px;
+            width: 19px;
+          }
+        }
+      }
+      #article-list {
+        grid-template-columns: 1fr;
+        #right-column,
+        #left-column {
+          width: 0;
+          .article {
+            .edit {
+              bottom: 75px;
+            }
+            .delete {
+              bottom: 65px;
+            }
+            margin-bottom: 20px;
+            width: 380px;
+            height: 68px;
+            .article-title {
+              font-size: 0.75rem;
             }
           }
         }
@@ -853,6 +1023,11 @@ body {
       &:hover {
         cursor: pointer;
       }
+    }
+  }
+  @media only screen and (min-width: $xs1) and (max-width: $s) {
+    #convo-section {
+      display: none;
     }
   }
   @media only screen and (min-width: $s) {

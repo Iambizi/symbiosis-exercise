@@ -11,6 +11,9 @@ body {
   display: grid;
   grid-template-columns: 225px auto 360px;
   overflow-x: hidden; }
+  @media only screen and (min-width: 375px) {
+    body {
+      grid-template-columns: 0 auto 0; } }
   @media only screen and (min-width: 700px) {
     body {
       grid-template-columns: 150px auto 220px; } }
@@ -59,6 +62,9 @@ body {
       body #sidebar #logout a {
         text-decoration: none;
         color: inherit; }
+  @media only screen and (min-width: 375px) and (max-width: 700px) {
+    body #sidebar {
+      display: none; } }
   @media only screen and (min-width: 700px) {
     body #sidebar {
       width: 150px; }
@@ -245,6 +251,122 @@ body {
             body #main-content #article-list #left-column .article .delete:hover,
             body #main-content #article-list #right-column .article .delete:hover {
               cursor: pointer; }
+  @media only screen and (min-width: 375px) {
+    body #main-content #filter svg#funnel {
+      margin: 30px 10px 0 20px;
+      height: 19px; }
+    body #main-content #filter p {
+      font-size: 0.87rem;
+      margin-top: 32px; }
+    body #main-content #filter input {
+      margin-top: 29px;
+      margin-left: 18px;
+      height: 20px;
+      width: 100px;
+      font-size: 12px; }
+    body #main-content #filter #add-filter {
+      left: 12%;
+      margin: 24px 10px 0 0;
+      border-radius: 2px;
+      height: 35px;
+      width: 35px; }
+    body #main-content #filter svg {
+      height: 25px; }
+    body #main-content #article-list {
+      grid-template-columns: 1fr; }
+      body #main-content #article-list #right-column,
+      body #main-content #article-list #left-column {
+        width: 0; }
+        body #main-content #article-list #right-column .article,
+        body #main-content #article-list #left-column .article {
+          margin-bottom: 20px;
+          width: 200px;
+          height: 68px; }
+          body #main-content #article-list #right-column .article .edit,
+          body #main-content #article-list #left-column .article .edit {
+            bottom: 75px; }
+          body #main-content #article-list #right-column .article .delete,
+          body #main-content #article-list #left-column .article .delete {
+            bottom: 65px; }
+          body #main-content #article-list #right-column .article .article-title,
+          body #main-content #article-list #left-column .article .article-title {
+            font-size: 0.7rem; } }
+  @media only screen and (min-width: 500px) {
+    body #main-content #filter svg#funnel {
+      margin: 30px 10px 0 20px;
+      height: 19px; }
+    body #main-content #filter p {
+      font-size: 0.87rem;
+      margin-top: 32px; }
+    body #main-content #filter input {
+      margin-top: 29px;
+      margin-left: 18px;
+      height: 20px;
+      width: 190px;
+      font-size: 12px; }
+    body #main-content #filter #add-filter {
+      left: 18%;
+      border: none; }
+      body #main-content #filter #add-filter svg {
+        height: 19px;
+        width: 19px; }
+    body #main-content #article-list {
+      grid-template-columns: 1fr; }
+      body #main-content #article-list #right-column,
+      body #main-content #article-list #left-column {
+        width: 0; }
+        body #main-content #article-list #right-column .article,
+        body #main-content #article-list #left-column .article {
+          margin-bottom: 20px;
+          width: 280px;
+          height: 68px; }
+          body #main-content #article-list #right-column .article .edit,
+          body #main-content #article-list #left-column .article .edit {
+            bottom: 75px; }
+          body #main-content #article-list #right-column .article .delete,
+          body #main-content #article-list #left-column .article .delete {
+            bottom: 65px; }
+          body #main-content #article-list #right-column .article .article-title,
+          body #main-content #article-list #left-column .article .article-title {
+            font-size: 0.75rem; } }
+  @media only screen and (min-width: 600px) {
+    body #main-content #filter svg#funnel {
+      margin: 30px 10px 0 20px;
+      height: 19px; }
+    body #main-content #filter p {
+      font-size: 0.87rem;
+      margin-top: 32px; }
+    body #main-content #filter input {
+      margin-top: 29px;
+      margin-left: 18px;
+      height: 24px;
+      width: 210px;
+      font-size: 12px; }
+    body #main-content #filter #add-filter {
+      left: 18%;
+      border: none; }
+      body #main-content #filter #add-filter svg {
+        height: 19px;
+        width: 19px; }
+    body #main-content #article-list {
+      grid-template-columns: 1fr; }
+      body #main-content #article-list #right-column,
+      body #main-content #article-list #left-column {
+        width: 0; }
+        body #main-content #article-list #right-column .article,
+        body #main-content #article-list #left-column .article {
+          margin-bottom: 20px;
+          width: 380px;
+          height: 68px; }
+          body #main-content #article-list #right-column .article .edit,
+          body #main-content #article-list #left-column .article .edit {
+            bottom: 75px; }
+          body #main-content #article-list #right-column .article .delete,
+          body #main-content #article-list #left-column .article .delete {
+            bottom: 65px; }
+          body #main-content #article-list #right-column .article .article-title,
+          body #main-content #article-list #left-column .article .article-title {
+            font-size: 0.75rem; } }
   @media only screen and (min-width: 700px) {
     body #main-content #filter svg#funnel {
       margin: 30px 10px 0 20px;
@@ -539,6 +661,9 @@ body {
           right: 3.5%; }
       body #convo-section #add-convo:hover {
         cursor: pointer; }
+  @media only screen and (min-width: 375px) and (max-width: 700px) {
+    body #convo-section {
+      display: none; } }
   @media only screen and (min-width: 700px) {
     body #convo-section {
       width: 220px; }
